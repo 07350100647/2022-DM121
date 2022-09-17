@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
 }
+a:link{
+    text-decoration: none;
+
+}
+a:link:hover{
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+a:link[href^='http']::after{
+    content: "↗️";
+}
+
 #header {
     background-color: darkslategray;
     padding: 5px;
@@ -33,6 +46,7 @@ p:hover .extra{
     border: 2px solid green;
     box-shadow: 2px 2px lightgray;
 }
+
 [title]{
     cursor: help;
 }
