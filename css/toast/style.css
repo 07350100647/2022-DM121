@@ -1,3 +1,16 @@
 * {
     font-family: Mons;
+    box-sizing: border-box;
+}
+
+.toast {
+    width: 320px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.toast .icon {
+    width: 32px;
+    height: 32px;
+    background-image: url(images/infoButton.svg);
 }
