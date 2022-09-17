@@ -11,11 +11,24 @@ h1 {
     color: white;
 }
 
-.highlight{
+p,
+.highlight {
+    transition: all 0.5s ease-out;
+}
+
+p:hover{
+    color: gray;
+}
+
+
+
+p:hover .highlight{
     padding: 2px;
     background-color: lime;
+    color: black;
 }
-.extra{
+
+p:hover .extra{
     border-radius: 8px;
     border: 2px solid green;
     box-shadow: 2px 2px lightgray;
