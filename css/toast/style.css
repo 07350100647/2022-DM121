@@ -1,7 +1,11 @@
 * {
-    font-family: Mons;
+    font-family: Montserrat;
     box-sizing: border-box;
 }
+
+body > div {
+    margin-bottom: 20px;
+  }
 
 .toast {
     width: 320px;
@@ -29,9 +33,18 @@
 .toast p {
     font-size: 14px;
     margin: 4px 0 0 0;
+    color: #4d4d4d;
 }
 
 .toast header {
     display: flex;
     justify-content: space-between;
+}
+
+.toast.sucess {
+    border-color: #6fcf97;
+}
+
+.toast.sucess .icon {
+    background-image: url(images/successicon.svg);
 }
