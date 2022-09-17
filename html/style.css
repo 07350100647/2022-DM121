@@ -33,7 +33,10 @@ p:hover{
     color: gray;
 }
 
-
+p::selection {
+    background-color: black;
+    color: lime;
+}
 
 p:hover .highlight{
     padding: 2px;
