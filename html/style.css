@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background-color: darkslategray;
+    padding: 5px;
+}
+h1 {
+    border: 1px solid red;
+}
+
+.highlight{
+    padding: 2px;
+    background-color: lime;
+}
+.extra{
+    border-radius: 8px;
+    border: 2px solid green;
+    box-shadow: 2px 2px lightgray;
+}
+[title]{
+    cursor: help;
+}
