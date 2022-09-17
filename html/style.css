@@ -5,9 +5,10 @@
 #header {
     background-color: darkslategray;
     padding: 5px;
+    margin-bottom: 20px;
 }
 h1 {
-    border: 1px solid red;
+    color: white;
 }
 
 .highlight{
@@ -21,4 +22,9 @@ h1 {
 }
 [title]{
     cursor: help;
+}
+p {
+    margin-bottom: 50px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 50px;
 }
