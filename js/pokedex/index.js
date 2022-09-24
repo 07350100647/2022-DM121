@@ -1,0 +1,33 @@
+async function fetchData(pokeNumber) {
+    const response = await fetch(
+        "https://pokeapi.co/api/v2/pokemon/" + pokeNumber
+        );
+    const pokemon = await response.json();
+    //console.log({ pokemon });
+    return pokemon
+
+}
+
+//async function main() {
+
+async function createPokemon(pokeNumber) {
+    
+
+    const pokemon = await fetchData(pokeNumber)
+    const div = document.createElement('div')
+    const h2 = document.createElement('h1')
+    const img = document.createElement("img");
+    h2.textContent = `#${pokemon.order} - ${pokemon.name}`;
+    img.src = pokemon.sprites.front_default;
+    div.appendChild(h2)
+    div.appendChild(img)
+    document.body.appendChild(div);
+
+
+    //}
+}
+
+const pokeNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+pokeNumbers.forEach(createPokemon);
+//main()
