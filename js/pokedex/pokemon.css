@@ -82,9 +82,15 @@ order{
 }
 
 name{
-    font-size: 10px;
-    align: center;
-    
+    font-size: 10px;       
     top: 4px;
     
+}
+
+section{
+    padding: 0px, 0px, 0px, 0px;
+}
+
+#about{
+    text-align: end;
 }

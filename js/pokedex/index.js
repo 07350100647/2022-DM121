@@ -8,7 +8,7 @@ inputEle.addEventListener('keyup', function(e){
   if (key == 13) { // codigo da tecla enter
     if ((this.value > 0) && (this.value <162)){
         // colocas aqui a tua função a rodar
-        location.href = "https://07350100647.github.io/2022-DM121/js/pokedex/pokemon.html?minhaVariavel=" + this.value;
+        location.href = "https://github.com/07350100647/2022-DM121/tree/main/js/pokedex/pokemon.html?minhaVariavel=" + this.value;
 
         createPokemon(this.value)
     }
@@ -33,7 +33,7 @@ async function fetchData(pokeNumber) {
 
 async function createPokemon(pokeNumber) {
     
-
+    
     const pokemon = await fetchData(pokeNumber)
     const div = document.createElement('icon')    
     const order = document.createElement('order')
@@ -42,6 +42,7 @@ async function createPokemon(pokeNumber) {
     order.textContent = `#${pokemon.order}`;
     name.textContent = `${pokemon.name}`;
     img.src = pokemon.sprites.front_default;
+    
     div.appendChild(order)
     div.appendChild(img)
     div.appendChild(name)
