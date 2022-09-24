@@ -21,9 +21,10 @@ async function createPokemon(pokeNumber) {
     order.textContent = `#${pokemon.order}`;
     name.textContent = `${pokemon.name}`;
     img.src = pokemon.sprites.front_default;
+    div.appendChild(name)
     div.appendChild(order)
     div.appendChild(img)
-    div.appendChild(name)
+   
     document.body.appendChild(div);
 
     
