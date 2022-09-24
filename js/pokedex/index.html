@@ -2,30 +2,31 @@
 <html lang="en">
 
 <head>
-    <title>Pokedex</title>
-    <!-- <link rel="stylesheet" href="style.css"/> -->
-    
-    <script src="index.js" defer> </script>
-    <style>
-        div{
-            background-color: lightblue;
-            padding: 4px;
-            float: left;
-            width: 120px;
-            margin: 0 4px 4px 0;
-        }
-        div h2{
-            font-size: 14px;
-            text-transform: capitalize;
-            margin: 0;
-        }
-    </style>
+    <title>Pokédex</title>
 
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="index.js" defer> </script>
 
 </head>
 
 <body>
+    <div class="pokedex">
+        <header>
+            <img src="images/pokedex.svg">
+            <h1>Pokédex</h1>
+            <img id="rash" src="images/rash.svg">
+            
+            <button id="busca" onclick="myFunction(document.getElementById('seach'))">
+                <img src="images/arrow.svg">
+            </button>
 
+        </header>
+    </div>
+    <div id="seach">
+        <input id="search" type="text" value="Digite o numero do pokemon (1 - 161) "></input>
+    </div>
 </body>
 
 </html>

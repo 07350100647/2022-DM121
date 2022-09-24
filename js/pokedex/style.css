@@ -1,0 +1,90 @@
+*{
+    font-family: Poppins;
+    
+}
+
+body{
+    width: 360px;
+    height: 640px;
+    padding: 24px, 16px, 0px, 16px;
+    gap: 8px;
+    border: 1px;
+    background: #F7F7F7;
+    border-radius: 12px;
+
+
+    
+}
+div{
+    margin: 0 8px 8px;
+    
+}
+
+ .pokedex header {
+
+   font-size: 24px;
+   line-height: 32px;
+   display: flex;
+   justify-content: space-between;
+   
+} 
+#search{
+
+box-sizing: border-box;
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px, 8px, 4px, 8px;
+gap: 16px;
+width: 328px;
+height: 24px;
+top: 64px;
+left: 16px;
+
+
+/* White */
+
+background: #FFFFFF;
+/* Light Gray */
+
+border: 1px solid #E0E0E0;
+border-radius: 8px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+    
+    
+    
+}
+
+icon {
+           
+    float: left;
+    width: 104px;
+    height: 150px;
+    border-radius: 8px;
+    margin: 0 8px 8px;    
+    box-sizing: border-box;
+    border: 1px solid
+}
+
+order{
+    
+    font-size: 8px;
+    line-height: 12px;    
+    top: 4px;
+    left: 8px;       
+    margin-left: 80px;
+}
+
+name{
+    font-size: 10px;
+    align: center;
+    
+    top: 4px;
+    
+}

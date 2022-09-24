@@ -1,24 +1,3 @@
-
-const inputsearch = document.getElementById('search');
-
-const inputEle = document.getElementById('search');
-
-inputEle.addEventListener('keyup', function(e){
-  var key = e.which || e.keyCode;
-  if (key == 13) { // codigo da tecla enter
-    if ((this.value > 0) && (this.value <162)){
-        // colocas aqui a tua função a rodar
-        location.href = "http://127.0.0.1:5500/2022-DM121/js/pokedex/pokemon.html?minhaVariavel=" + this.value;
-
-        createPokemon(this.value)
-    }
-  }
-});
-
-
-function myFunction(valor){
-    console.log("Apertou o botão"+valor);
-}
 async function fetchData(pokeNumber) {
     const response = await fetch(
         "https://pokeapi.co/api/v2/pokemon/" + pokeNumber
@@ -51,12 +30,26 @@ async function createPokemon(pokeNumber) {
 }
 
 
-const pokeNumberMax = 62
-const pokeNumbers = []
-
-for (i=1; i< pokeNumberMax; i++){
-    pokeNumbers.push(i)
+function queryString(parameter) {  
+    var loc = location.search.substring(1, location.search.length);   
+    var param_value = false;   
+    var params = loc.split("&");   
+    for (i=0; i<params.length;i++) {   
+        param_name = params[i].substring(0,params[i].indexOf('='));   
+        if (param_name == parameter) {                                          
+            param_value = params[i].substring(params[i].indexOf('=')+1)   
+        }   
+    }   
+    if (param_value) {   
+        return param_value;   
+    }   
+    else {   
+        return undefined;   
+    }   
 }
 
-pokeNumbers.forEach(createPokemon);
-//main()
+var pokeNumber = queryString("minhaVariavel");
+
+console.log(pokeNumber);
+
+ createPokemon(pokeNumber);
