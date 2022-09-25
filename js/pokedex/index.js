@@ -8,7 +8,7 @@ inputEle.addEventListener('keyup', function(e){
   if (key == 13) { // codigo da tecla enter
     if ((this.value > 0) && (this.value <162)){
         // colocas aqui a tua função a rodar
-        location.href = "https://github.com/07350100647/2022-DM121/tree/main/js/pokedex/pokemon.html?minhaVariavel=" + this.value;
+        location.href = "http://127.0.0.1:5500/2022-DM121/js/pokedex/pokemon.html?minhaVariavel=" + this.value;
 
         createPokemon(this.value)
     }
