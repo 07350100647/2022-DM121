@@ -11,37 +11,11 @@ body{
     border: 1px;
     background: #F7F7F7;
     border-radius: 12px;
-
-
     
 }
-/* div{
-
-    font-family: "Poppins";
-    width: 360px;
-    height: 640px;
-    background-color: blue;
-    border: 1px solid;
-    border-radius: 8px;
-    
-    
-} */
-
- .pokedex header {
-
-   font-size: 24px;
-   line-height: 32px;
-   display: flex;
-   justify-content: space-between;
-   
-} 
 #search{
 
 box-sizing: border-box;
-
-display: flex;
-flex-direction: row;
-align-items: flex-start;
 padding: 4px, 8px, 4px, 8px;
 gap: 16px;
 width: 328px;
@@ -58,18 +32,14 @@ background: #FFFFFF;
 border: 1px solid #E0E0E0;
 border-radius: 8px;
 
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-    
-    
+  
     
 }
 
 icon {
-           
+    
+    display: flex;
+    flex-direction: row;
     float: left;
     width: 360px;
     height: 640px;
@@ -81,16 +51,11 @@ icon {
     margin-right: 5px;
     margin-left: 5px;
     background: #74CB48
+    
+    
+    
 }
-order{
-    margin-top: -100px;
-    position: relative;
-    font-size: 8px;
-    line-height: 12px;    
-    top: 4px;
-    left: 8px;       
-    margin-left: 30px;
-}
+
 
 .head {
     width: 0px;
@@ -102,8 +67,10 @@ order{
 img{
     width: 200px;
     height: 200px;
-    margin-top: 100px;
+    margin-top: 80px;    
     position: relative;
+    position:fixed;
+    margin-left: 4.5%;
 
 }
 #imageRetorno{
@@ -112,24 +79,32 @@ img{
     margin-top: 31.35px;
     margin-left: 27.25px;
 }
-
+order{
+    
+    font-size: 24px;
+    line-height: 12px;       
+    margin-top: 37.35px;
+    margin-left: 0px;
+    color: white;
+}
 name{
-    font-size: 10px;       
-    top: 4px;
-    position: relative;
-    margin-top: 0px;
-    offset-position: 100px;
+    font-size: 24px;   
+    line-height: 32px;
+    color: white;
+    margin-top: 27.35px;
+    margin-right: 25px;
+    margin-left: 200px;
+    
+    
     
 }
-
 
 
 .about {
     background: #F7F7F7;
     border-radius: 8px;
     
-    display: flex;
-    flex-direction: column;
+    
     box-sizing: border-box;
     border: 1px solid;
     margin: 0px 120px 8px;  
@@ -140,13 +115,6 @@ name{
     margin-left: 9px;
 }
 
-
-/* .pokemon {
-    position: absolute;
-    left: 80px;
-    right: 0%;
-    top: -110px;
-    bottom: 0%;
-    background: url(/images/charmander.svg);
-    background-repeat: no-repeat;
-} */
+.pokemon{
+    text-align: center;
+}
