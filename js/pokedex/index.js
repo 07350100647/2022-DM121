@@ -52,7 +52,7 @@ async function createPokemon(pokeNumber) {
 }
 
 
-const pokeNumberMax = 62
+const pokeNumberMax = 52
 const pokeNumbers = []
 
 for (i=1; i< pokeNumberMax; i++){

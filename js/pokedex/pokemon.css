@@ -15,10 +15,17 @@ body{
 
     
 }
-div{
-    margin: 0 8px 8px;
+/* div{
+
+    font-family: "Poppins";
+    width: 360px;
+    height: 640px;
+    background-color: blue;
+    border: 1px solid;
+    border-radius: 8px;
     
-}
+    
+} */
 
  .pokedex header {
 
@@ -64,16 +71,20 @@ flex-grow: 0;
 icon {
            
     float: left;
-    width: 104px;
-    height: 150px;
+    width: 360px;
+    height: 640px;
     border-radius: 8px;
     margin: 0 8px 8px;    
     box-sizing: border-box;
-    border: 1px solid
+    border: 1px solid;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: #74CB48
 }
-
 order{
-    
+    margin-top: -100px;
+    position: relative;
     font-size: 8px;
     line-height: 12px;    
     top: 4px;
@@ -81,16 +92,61 @@ order{
     margin-left: 30px;
 }
 
+.head {
+    width: 0px;
+    height: 0px;
+    width: 0px;
+          
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    position: relative;
+
+}
+#imageRetorno{
+    width: 17.5px;
+    height: 17.5px;
+    margin-top: 31.35px;
+    margin-left: 27.25px;
+}
+
 name{
     font-size: 10px;       
     top: 4px;
+    position: relative;
+    margin-top: 0px;
+    offset-position: 100px;
     
 }
 
-section{
-    padding: 0px, 0px, 0px, 0px;
+
+
+.about {
+    background: #F7F7F7;
+    border-radius: 8px;
+    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid;
+    margin: 0px 120px 8px;  
+    position: absolute;
+    width: 352px;
+    height: 412px;
+    margin-top: 230px;    
+    margin-left: 9px;
 }
 
-#about{
-    text-align: end;
-}
+
+/* .pokemon {
+    position: absolute;
+    left: 80px;
+    right: 0%;
+    top: -110px;
+    bottom: 0%;
+    background: url(/images/charmander.svg);
+    background-repeat: no-repeat;
+} */
