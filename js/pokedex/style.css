@@ -4,6 +4,7 @@
 }
 
 body {
+    
     width: 360px;
     height: 640px;
     padding: 24px, 16px, 0px, 16px;
@@ -21,18 +22,22 @@ div {
 
 .pokedex header {
 
+    display: flex;    
     font-size: 24px;
     line-height: 32px;
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 
 }
 
 #search {
+    display: flex;
+    flex-direction: row;
     width: 328px;
     height: 24px;
     top: 64px;
+    gap: 16px;
     margin-left: 8px;
+    margin-top: 64px;
     /* White */
     background: #FFFFFF;
     /* Light Gray */
@@ -76,4 +81,22 @@ img {
 
     position: absolute;
 
+}
+
+#simbol1{
+    margin-top: 33px;
+}
+#simbol2{
+    margin-top: 40px;
+   margin-left: 325px;
+   position: absolute;
+}
+#simbol3{
+    margin-top: 40px;
+}
+
+#simbol4{
+    margin-left: 50px;
+    
+    position: absolute;
 }
