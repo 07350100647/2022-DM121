@@ -83,17 +83,17 @@ order{
     
     font-size: 24px;
     line-height: 12px;       
-    margin-top: 37.35px;
-    margin-left: 0px;
+    margin-top: 32.35px;
+    margin-left: 150px;
     color: white;
 }
 name{
     font-size: 24px;   
     line-height: 32px;
     color: white;
-    margin-top: 27.35px;
-    margin-right: 25px;
-    margin-left: 200px;
+    font-weight: bold;
+    margin-top: 20.35px;    
+    margin-left: 60px;
     
     
     

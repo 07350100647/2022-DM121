@@ -18,8 +18,8 @@ body > div {
 }
 
 .toast .icon {
-    width: 32px;
-    height: 32px;
+    width: 104px;
+    height: 112px;
     background-image: url(images/infoButton.svg);
 }
 .toast section {
