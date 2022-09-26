@@ -38,7 +38,7 @@ div {
     /* Light Gray */
     border: 1px solid #E0E0E0;
     border-radius: 8px;
-    
+
 }
 
 icon {
@@ -64,7 +64,7 @@ order {
 }
 
 name {
-    
+
     font-size: 10px;
     top: 4px;
     margin-left: 25px;
@@ -72,8 +72,8 @@ name {
 
 }
 
-img{
-    display: flex;
-    position: relative;   
-    position:fixed;
+img {
+
+    position: absolute;
+
 }
